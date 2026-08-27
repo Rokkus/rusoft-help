@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РуСофт Навигатор — российские аналоги зарубежного ПО</title>
+    <meta name="description" content="Каталог российского ПО: аналоги Windows, Office, AutoCAD, TeamViewer, Photoshop, 1С, антивирусы и CRM. Программы из реестра Минцифры для бизнеса и госсектора.">
+    <meta name="keywords" content="российское ПО, импортозамещение, аналоги TeamViewer, аналоги AutoCAD, реестр Минцифры, МойОфис, Astra Linux, 1С, Контур, RuDesktop">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rusoft-help.ru/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://rusoft-help.ru/">
+    <meta property="og:title" content="РуСофт Навигатор — российские аналоги зарубежного ПО">
+    <meta property="og:description" content="Найдите надёжную российскую замену Windows, Office, AutoCAD, TeamViewer и другого ПО. Справочник с реестром Минцифры.">
+    <meta property="og:site_name" content="РуСофт Навигатор">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d4ed8'/%3E%3Cpath d='M32 12l7 18h19l-15 11 6 18-17-12-17 12 6-18-15-11h19z' fill='%23fff'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "РуСофт Навигатор",
+      "url": "https://rusoft-help.ru/",
+      "description": "Каталог российского программного обеспечения — аналоги ушедших зарубежных программ",
+      "inLanguage": "ru-RU",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://rusoft-help.ru/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+<div class="site-wrapper">
+    <div class="main-content">
+        <header>
+            <h1><i class="fa-solid fa-compass" aria-hidden="true"></i> РуСофт Навигатор</h1>
+            <p>Справочник отечественного ПО: надёжные российские альтернативы зарубежным программам</p>
+        </header>
+
+        <main class="container">
+            <div class="search-container">
+                <label for="search" class="search-label">Напишите название программы (например: Photoshop, Windows, TeamViewer, Excel):</label>
+                <div class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+                    <input type="search" id="search" class="search-box" placeholder="Введите название или что ищете…" aria-label="Поиск аналогов программы" autocomplete="off">
+                </div>
+                <div class="chips" aria-label="Частые запросы">
+                    <button type="button" class="chip" data-q="TeamViewer">TeamViewer / AnyDesk</button>
+                    <button type="button" class="chip" data-q="AutoCAD">AutoCAD / Автокад</button>
+                    <button type="button" class="chip" data-q="Windows">Windows</button>
+                    <button type="button" class="chip" data-q="Excel">Excel</button>
+                    <button type="button" class="chip" data-q="Photoshop">Photoshop / Фотошоп</button>
+                    <button type="button" class="chip" data-q="Zoom">Zoom</button>
+                    <button type="button" class="chip" data-q="1С">1С</button>
+                </div>
+            </div>
+
+            <p class="search-label">Или выберите тему — нажмите на кнопку:</p>
+            <div class="categories" role="group" aria-label="Категории программ">
+                <button class="cat-btn active" id="btn-all" data-category="all"><i class="fa-solid fa-list" aria-hidden="true"></i> Показать всё</button>
+                <button class="cat-btn" id="btn-office" data-category="office"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Офис и документы</button>
+                <button class="cat-btn" id="btn-system" data-category="system"><i class="fa-solid fa-desktop" aria-hidden="true"></i> Операционные системы</button>
+                <button class="cat-btn" id="btn-design" data-category="design"><i class="fa-solid fa-palette" aria-hidden="true"></i> Чертежи и дизайн</button>
+                <button class="cat-btn" id="btn-security" data-category="security"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Защита компьютера</button>
+                <button class="cat-btn" id="btn-remote" data-category="remote"><i class="fa-solid fa-laptop" aria-hidden="true"></i> Удалённый доступ</button>
+                <button class="cat-btn" id="btn-business" data-category="business"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Бухгалтерия и бизнес</button>
+                <button class="cat-btn" id="btn-dev" data-category="dev"><i class="fa-solid fa-code" aria-hidden="true"></i> Для IT и баз данных</button>
+                <button class="cat-btn" id="btn-media" data-category="media"><i class="fa-solid fa-film" aria-hidden="true"></i> Видео, фото, звук</button>
+            </div>
+
+            <div class="filter-row">
+                <label>
+                    <input type="checkbox" id="only-registry">
+                    Только программы из реестра Минцифры
+                </label>
+                <span id="results-count" aria-live="polite"></span>
+            </div>
+
+            <aside class="adv-banner" id="promo-banner" aria-label="Рекламный блок">
+                <div class="adv-badge">РЕКЛАМА</div>
+                <p class="adv-text"><i class="fa-solid fa-rectangle-ad" aria-hidden="true"></i> Место для рекламы РСЯ / партнёров</p>
+                <p class="adv-subtext">Размещение: ваш-email@mail.ru</p>
+            </aside>
+
+            <div class="grid" id="software-grid"></div>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2026 РуСофт Навигатор. Товарные знаки принадлежат правообладателям.</p>
+        <p class="footer-warning">Справочник не использует cookie и не собирает персональные данные. Логотипы подгружаются из открытых источников в ознакомительных целях. Сайт не аффилирован с разработчиками перечисленного ПО.</p>
+        <p class="footer-link-wrapper"><a href="privacy.html" class="privacy-link">Политика конфиденциальности</a></p>
+        <p class="update-date">Обновлено: август 2026</p>
+    </footer>
+</div>
+
+<div id="modal-box" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+        <button type="button" class="close-modal" id="close-modal-btn" aria-label="Закрыть">&times;</button>
+        <div id="modal-body-content"></div>
+    </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+<!-- Яндекс.Метрика: замените 00000000 на ваш номер счётчика -->
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(00000000, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</body>
+</html>
