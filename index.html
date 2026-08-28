@@ -88,19 +88,31 @@
             <aside class="adv-banner" id="promo-banner" aria-label="Рекламный блок">
                 <div class="adv-badge">РЕКЛАМА</div>
                 <p class="adv-text"><i class="fa-solid fa-rectangle-ad" aria-hidden="true"></i> Место для рекламы РСЯ / партнёров</p>
-                <p class="adv-subtext">Размещение: ваш-email@mail.ru</p>
+                <p class="adv-subtext">Размещение: info@rusoft-help.ru</p>
             </aside>
 
             <div class="grid" id="software-grid"></div>
         </main>
     </div>
 
-    <footer>
-        <p>© 2026 РуСофт Навигатор. Товарные знаки принадлежат правообладателям.</p>
+ <footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <strong>РуСофт Навигатор</strong>
+            <span class="footer-copy">© 2026. Товарные знаки принадлежат правообладателям.</span>
+        </div>
+        <nav class="footer-nav" aria-label="Ссылки в подвале">
+            <a href="mailto:info@rusoft-help.ru" class="footer-link">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                info@rusoft-help.ru
+            </a>
+            <span class="footer-sep" aria-hidden="true">·</span>
+            <a href="privacy.html" class="footer-link">Политика конфиденциальности</a>
+        </nav>
         <p class="footer-warning">Справочник не использует cookie и не собирает персональные данные. Логотипы подгружаются из открытых источников в ознакомительных целях. Сайт не аффилирован с разработчиками перечисленного ПО.</p>
-        <p class="footer-link-wrapper"><a href="privacy.html" class="privacy-link">Политика конфиденциальности</a></p>
         <p class="update-date">Обновлено: август 2026</p>
-    </footer>
+    </div>
+</footer>
 </div>
 
 <div id="modal-box" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
@@ -120,7 +132,14 @@ m[i].l=1*new Date();
 for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
 k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
 (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-ym(00000000, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
+ym(00000000, "init", {
+     clickmap:true,
+     trackLinks:true,
+     accurateTrackBounce:true,
+     webvisor:false,   
+     defer:true,       
+     useCookies: false 
+});
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>

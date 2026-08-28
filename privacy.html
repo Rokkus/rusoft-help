@@ -1,37 +1,171 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Политика конфиденциальности сайта РуСофт Навигатор. Сайт не собирает персональные данные.">
-<title>Политика конфиденциальности — РуСофт Навигатор</title>
-<link rel="stylesheet" href="css/style.css">
-<style>
-.policy-wrap{max-width:780px;margin:0 auto;padding:32px 18px 48px}
-.policy-wrap h1{font-size:28px;margin:16px 0 12px}
-.policy-wrap h2{font-size:18px;color:var(--primary-color);margin:24px 0 8px}
-.policy-wrap p{color:var(--text-muted);margin-bottom:12px;line-height:1.65;font-size:16px}
-.back{display:inline-flex;gap:8px;align-items:center;font-weight:700;color:var(--primary-color);text-decoration:none;margin-bottom:20px}
-.back:hover{text-decoration:underline}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Политика конфиденциальности сайта РуСофт Навигатор. Сайт не собирает персональные данные и не использует cookie.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rusoft-help.ru/privacy.html">
+    <title>Политика конфиденциальности — РуСофт Навигатор</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d4ed8'/%3E%3Cpath d='M32 12l7 18h19l-15 11 6 18-17-12-17 12 6-18-15-11h19z' fill='%23fff'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .policy-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .policy-page .main-content {
+            flex: 1 0 auto;
+        }
+        .policy-header {
+            background:
+                radial-gradient(circle at 50% -30%, rgba(59, 130, 246, 0.4), transparent 55%),
+                linear-gradient(135deg, var(--header-start), var(--header-end));
+            color: #fff;
+            text-align: center;
+            padding: 36px 18px 32px;
+            border-bottom: 4px solid var(--primary-color);
+        }
+        .policy-header h1 {
+            font-size: 26px;
+            font-weight: 800;
+            margin: 0 0 8px;
+        }
+        .policy-header p {
+            margin: 0;
+            color: #dbeafe;
+            font-size: 16px;
+        }
+        .policy-wrap {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 32px 18px 48px;
+        }
+        .policy-wrap .back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        .policy-wrap .back:hover {
+            text-decoration: underline;
+        }
+        .policy-wrap h1 {
+            font-size: 28px;
+            margin: 0 0 8px;
+            color: var(--text-main);
+        }
+        .policy-wrap .policy-date {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+        .policy-wrap h2 {
+            font-size: 18px;
+            color: var(--primary-color);
+            margin: 28px 0 10px;
+            font-weight: 800;
+        }
+        .policy-wrap p {
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            line-height: 1.65;
+            font-size: 16px;
+        }
+        .policy-wrap a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-<header style="padding:28px 16px;text-align:center">
-<h1 style="font-size:24px;margin:0"><i class="fa-solid fa-shield-halved"></i> РуСофт Навигатор</h1>
-</header>
-<main class="policy-wrap">
-<a class="back" href="index.html">← На главную</a>
-<h1>Политика конфиденциальности</h1>
-<p><strong>Дата обновления:</strong> август 2026</p>
-<p>Сайт «РуСофт Навигатор» (rusoft-help.ru) — статический справочник. Администрация <strong>не собирает, не хранит и не обрабатывает</strong> персональные данные посетителей. Нет регистрации, форм подписки и комментариев.</p>
-<h2>Реклама и аналитика</h2>
-<p>На сайте могут быть блоки Рекламной сети Яндекса и код Яндекс.Метрики. Сторонние сервисы могут собирать обезличенные технические данные. Управление cookie — в настройках браузера. Подробности: политика конфиденциальности Яндекса.</p>
-<h2>Ссылки</h2>
-<p>Сайт содержит ссылки на официальные ресурсы разработчиков. Мы не отвечаем за содержание и политику сторонних сайтов.</p>
-<h2>Согласие</h2>
-<p>Используя сайт, вы соглашаетесь с этой политикой.</p>
-</main>
-<footer style="text-align:center;padding:24px;color:#64748b;font-size:13px">© 2026 РуСофт Навигатор</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+<div class="site-wrapper policy-page">
+    <div class="main-content">
+        <header class="policy-header">
+            <h1><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> РуСофт Навигатор</h1>
+            <p>Политика конфиденциальности</p>
+        </header>
+
+        <main class="policy-wrap">
+            <a class="back" href="index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> На главную</a>
+
+            <h1>Политика конфиденциальности</h1>
+            <p class="policy-date"><strong>Дата обновления:</strong> август 2026</p>
+
+            <p>
+                Сайт «РуСофт Навигатор» (домен rusoft-help.ru) — статический справочник
+                российского программного обеспечения. Администрация сайта
+                <strong>не собирает, не хранит и не обрабатывает</strong> персональные
+                данные посетителей. Регистрации, форм подписки и комментариев на сайте нет.
+            </p>
+
+            <h2>1. Какие данные не собираются</h2>
+            <p>
+                Сайт не запрашивает имя, телефон, паспортные данные и другие сведения,
+                по которым можно идентифицировать человека. Не ведутся учётные записи
+                пользователей. Собственные файлы cookie сайт не устанавливает.
+            </p>
+
+            <h2>2. Реклама и аналитика</h2>
+            <p>
+                На сайте могут размещаться блоки Рекламной сети Яндекса (РСЯ) и код
+                Яндекс.Метрики. Сторонние сервисы могут получать обезличенные технические
+                данные (например, тип браузера или факт просмотра страницы) в соответствии
+                со своими правилами. Управление cookie и похожими технологиями доступно
+                в настройках браузера. Подробности — в политике конфиденциальности Яндекса.
+            </p>
+
+            <h2>3. Ссылки на сторонние ресурсы</h2>
+            <p>
+                Сайт содержит ссылки на официальные сайты разработчиков ПО.
+                Администрация не отвечает за содержание и политику конфиденциальности
+                сторонних ресурсов.
+            </p>
+
+            <h2>4. Обратная связь</h2>
+            <p>
+                По вопросам работы сайта и размещения рекламы можно написать на почту:
+                <a href="mailto:info@rusoft-help.ru">info@rusoft-help.ru</a>.
+                Письма обрабатываются вручную. Отправка письма означает, что вы
+                согласны на обработку адреса и текста обращения только для ответа вам.
+            </p>
+
+            <h2>5. Согласие пользователя</h2>
+            <p>
+                Используя данный сайт, вы подтверждаете, что ознакомились с настоящей
+                Политикой. При существенных изменениях дата обновления на этой странице
+                будет изменена.
+            </p>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <strong>РуСофт Навигатор</strong>
+                <span class="footer-copy">© 2026. Товарные знаки принадлежат правообладателям.</span>
+            </div>
+            <nav class="footer-nav" aria-label="Ссылки в подвале">
+                <a href="mailto:info@rusoft-help.ru" class="footer-link">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    info@rusoft-help.ru
+                </a>
+                <span class="footer-sep" aria-hidden="true">·</span>
+                <a href="index.html" class="footer-link">
+                    <i class="fa-solid fa-house" aria-hidden="true"></i>
+                    На главную
+                </a>
+            </nav>
+            <p class="footer-warning">Справочник не использует cookie и не собирает персональные данные. Логотипы подгружаются из открытых источников в ознакомительных целях.</p>
+            <p class="update-date">Обновлено: август 2026</p>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
