@@ -31,7 +31,8 @@ function appendLogo(container, item) {
     container.innerHTML = '';
     const category = getCategoryInfo(item.category);
     const customLogo = item.logo || item.img || item.image;
-    const domain = getDomain(item.url || item.site || item.link);
+    // logoDomain — если url реферальный (promo...), берём домен бренда для красивого лого
+    const domain = (item.logoDomain || getDomain(item.url || item.site || item.link) || '').replace(/^www\./, '');
 
     const renderFallback = function () {
         container.innerHTML = '<div class="program-logo-fallback ' + category.className + '" aria-hidden="true">' + category.icon + '</div>';
@@ -44,28 +45,47 @@ function appendLogo(container, item) {
         img.loading = 'lazy';
         img.decoding = 'async';
         img.src = customLogo;
-        img.onerror = renderFallback;
+        img.onerror = function () {
+            // если кастомный лого упал — пробуем цепочку по домену
+            tryDomainLogos(domain, container, category, renderFallback, item.name);
+        };
         container.appendChild(img);
         return;
     }
     if (!domain) { renderFallback(); return; }
+    tryDomainLogos(domain, container, category, renderFallback, item.name);
+}
 
+function tryDomainLogos(domain, container, category, renderFallback, name) {
+    // 1) Clearbit — цветные лого брендов
+    // 2) Google favicon 128
+    // 3) Яндекс favicon (РФ)
     const sources = [
         'https://logo.clearbit.com/' + encodeURIComponent(domain),
         'https://www.google.com/s2/favicons?domain=' + encodeURIComponent(domain) + '&sz=128',
-        'https://icons.duckduckgo.com/ip3/' + encodeURIComponent(domain) + '.ico'
+        'https://favicon.yandex.net/favicon/v2/' + encodeURIComponent(domain) + '?size=120'
     ];
     const img = document.createElement('img');
     img.className = 'program-logo';
-    img.alt = item.name + ' — логотип';
+    img.alt = (name || '') + ' — логотип';
     img.loading = 'lazy';
     img.decoding = 'async';
     var idx = 0;
     function tryNext() {
         if (idx >= sources.length) { renderFallback(); return; }
         img.onerror = function () { idx++; tryNext(); };
+        img.onload = function () {
+            // отсекаем «пустые» 1x1
+            if (img.naturalWidth < 8 || img.naturalHeight < 8) {
+                idx++;
+                tryNext();
+            }
+        };
         img.src = sources[idx];
-        if (!img.parentNode) { container.innerHTML = ''; container.appendChild(img); }
+        if (!img.parentNode) {
+            container.innerHTML = '';
+            container.appendChild(img);
+        }
     }
     tryNext();
 }
@@ -102,17 +122,27 @@ function getFilteredData() {
     var q = searchQuery.toLowerCase().trim();
     var qExpanded = expandQuery(q);
     var tokens = qExpanded.split(/\s+/).filter(Boolean);
-    return getRawData().filter(function (item) {
+    var list = getRawData().filter(function (item) {
         if (currentCategory !== 'all' && item.category !== currentCategory) return false;
         if (onlyRegistry && !item.registry) return false;
         if (!q) return true;
         var hay = [item.name, item.replaces, item.replace, item.shortDesc, item.fullDesc, item.registryInfo].join(' ').toLowerCase();
-        // достаточно совпадения хотя бы одного токена из расширенного запроса
         for (var i = 0; i < tokens.length; i++) {
             if (hay.indexOf(tokens[i]) !== -1) return true;
         }
         return false;
     });
+    // Меньше sortIndex — выше в сетке. Дальше featured, затем порядок в файле.
+    list.sort(function (a, b) {
+        var ia = (typeof a.sortIndex === 'number') ? a.sortIndex : 9999;
+        var ib = (typeof b.sortIndex === 'number') ? b.sortIndex : 9999;
+        if (ia !== ib) return ia - ib;
+        var fa = a.featured ? 1 : 0;
+        var fb = b.featured ? 1 : 0;
+        if (fa !== fb) return fb - fa;
+        return 0;
+    });
+    return list;
 }
 
 function updateView() {
