@@ -34,7 +34,7 @@ const softwareData = [
     price: 'От ~1 000 ₽/квартал',
     pros: 'Простота для малого бизнеса; подсказки по срокам; 30 дней на тест; интеграция с банками.',
     cons: 'Не для сложного ОСНО и крупных штатов; ограниченная кастомизация; при росте бизнеса часто уходят в 1С.',
-    url: 'https://e-kontur.ru',
+    url: 'https://kontur.ru/elba/price?p=f78320&from=ref_cabinet',
   },
   {
     id: 'kontur-extern',
@@ -51,28 +51,11 @@ const softwareData = [
     price: 'От нескольких тысяч ₽/год',
     pros: 'Привычен бухгалтерам; актуальные формы; связка с экосистемой Контура; техподдержка по отчётности.',
     cons: 'Облачная зависимость; тарифы нужно подбирать под систему налогообложения; не «бесплатный ФНС-плагин».',
-    url: 'https://www.kontur-extern.ru',
-  },
-  {
-    id: 'kontur-focus',
-    sortIndex: 4,
-    featured: true,
-    name: 'Контур.Фокус',
-    category: 'business',
-    badgeClass: 'business',
-    replaces: 'проверка контрагентов, due diligence, Фокус',
-    registry: true,
-    registryInfo: 'СКБ Контур.',
-    shortDesc: 'Проверка контрагентов и оценка рисков перед сделкой.',
-    fullDesc: 'Выписки, связи между компаниями, маркеры риска. Снижает вероятность работы с фирмами-однодневками и проблемными должниками.',
-    price: 'От ~2 500 ₽',
-    pros: 'Популярный due diligence в РФ; наглядные риски; API для встраивания в процессы; экономит время юристов.',
-    cons: 'Расширенные отчёты платные; не заменяет юридическую экспертизу договора; данные зависят от открытых источников.',
-    url: 'https://focus.kontur.ru',
+    url: 'https://kontur.ru/lp/extern-price-rp?p=f78320&from=ref_cabinet',
   },
   {
     id: 'kontur-talk',
-    sortIndex: 5,
+    sortIndex: 4,
     featured: true,
     logoDomain: 'kontur.ru',
     name: 'Контур.Толк',
@@ -86,29 +69,28 @@ const softwareData = [
     price: 'По тарифам Контура',
     pros: 'Данные в РФ; единый аккаунт экосистемы; достаточно для внутренних встреч; без «иностранного» риска отключения.',
     cons: 'Меньше «развлекательных» функций Zoom; рынок плагинов скромнее; крупные вебинары лучше сравнивать с TrueConf.',
-    url: 'https://kontur.ru/talk',
+    url: 'https://online-sales.kontur.ru/sale?productId=Talk&scenarioId=talk_sale_with_code&p=f78320&from=ref_cabinet',
   },
   {
-    id: 'kontur-dostup',
-    sortIndex: 6,
+    id: 'kontur-focus',
+    sortIndex: 5,
     featured: true,
-    logoDomain: 'kontur.ru',
-    name: 'Контур.Доступ (Админ)',
-    category: 'remote',
-    badgeClass: 'remote',
-    replaces: 'TeamViewer, AnyDesk, Тимвивер, Энидеск, удалённый доступ',
+    name: 'Контур.Фокус',
+    category: 'business',
+    badgeClass: 'business',
+    replaces: 'проверка контрагентов, due diligence, Фокус',
     registry: true,
-    registryInfo: 'СКБ Контур, реестр ПО.',
-    shortDesc: 'Удалённый доступ и управление парком устройств от экосистемы Контура.',
-    fullDesc: 'Адресная книга, пробуждение ПК, серверная версия. Развивается в сторону UEM (линейка «Админ»). Удобен компаниям, уже сидящим на Контуре (Диадок, Экстерн и т.д.).',
-    price: 'От ~24 000 ₽/год',
-    pros: 'Экосистема Контура; серверы в РФ; понятная модель для бухгалтерии/ИТ; юридически «свой» вендор.',
-    cons: 'Исторически сильнее на Windows; цена выше бесплатных альтернатив; не всегда лучший выбор, если Контур больше нигде не используется.',
-    url: 'https://kontur.ru',
+    registryInfo: 'СКБ Контур.',
+    shortDesc: 'Проверка контрагентов и оценка рисков перед сделкой.',
+    fullDesc: 'Выписки, связи между компаниями, маркеры риска. Снижает вероятность работы с фирмами-однодневками и проблемными должниками.',
+    price: 'От ~2 500 ₽',
+    pros: 'Популярный due diligence в РФ; наглядные риски; API для встраивания в процессы; экономит время юристов.',
+    cons: 'Расширенные отчёты платные; не заменяет юридическую экспертизу договора; данные зависят от открытых источников.',
+    url: 'https://kontur.ru/focus-site/price?p=f78320&from=ref_cabinet',
   },
   {
     id: 'yandex-360',
-    sortIndex: 7,
+    sortIndex: 6,
     featured: true,
     logoDomain: 'yandex.ru',
     name: 'Яндекс 360 для бизнеса',
@@ -122,11 +104,11 @@ const softwareData = [
     price: 'От 299 ₽/мес за пользователя',
     pros: 'Инфраструктура в РФ и соответствие 152-ФЗ; видеовстречи без лимита времени; почта на корпоративном домене; понятные тарифы.',
     cons: 'Нужен стабильный интернет; офлайн-режим слабее настольного Office; глубокая кастомизация ограничена возможностями SaaS.',
-    url: 'https://360.yandex.ru',
+    url: 'https://360.yandex.ru/business/?utm_source=partner&utm_medium=referral&utm_campaign=ofy0qx43qvofizbd',
   },
   {
     id: 'yandex-browser',
-    sortIndex: 8,
+    sortIndex: 7,
     featured: true,
     name: 'Яндекс Браузер',
     category: 'office',
@@ -143,7 +125,7 @@ const softwareData = [
   },
   {
     id: 'yandex-cloud',
-    sortIndex: 9,
+    sortIndex: 8,
     featured: true,
     name: 'Yandex Cloud',
     category: 'dev',
@@ -160,7 +142,7 @@ const softwareData = [
   },
   {
     id: 'telemos',
-    sortIndex: 10,
+    sortIndex: 9,
     featured: true,
     logoDomain: 'yandex.ru',
     name: 'Яндекс Телемост',
@@ -178,7 +160,7 @@ const softwareData = [
   },
   {
     id: 'yandex-tracker',
-    sortIndex: 11,
+    sortIndex: 10,
     featured: true,
     name: 'Яндекс Трекер',
     category: 'business',
@@ -195,7 +177,7 @@ const softwareData = [
   },
   {
     id: 'yandex-wiki',
-    sortIndex: 12,
+    sortIndex: 11,
     featured: true,
     name: 'Яндекс Вики',
     category: 'business',
@@ -212,7 +194,7 @@ const softwareData = [
   },
   {
     id: 'myoffice-standard',
-    sortIndex: 100,
+    sortIndex: 12,
     name: 'МойОфис Стандартный',
     category: 'office',
     badgeClass: 'office',
@@ -228,7 +210,7 @@ const softwareData = [
   },
   {
     id: 'r7-office',
-    sortIndex: 101,
+    sortIndex: 13,
     name: 'Р7-Офис',
     category: 'office',
     badgeClass: 'office',
@@ -244,7 +226,7 @@ const softwareData = [
   },
   {
     id: 'sber-disk',
-    sortIndex: 102,
+    sortIndex: 14,
     logoDomain: 'sber.ru',
     name: 'СберДиск',
     category: 'office',
@@ -261,7 +243,7 @@ const softwareData = [
   },
   {
     id: 'vk-workspace',
-    sortIndex: 103,
+    sortIndex: 15,
     name: 'VK WorkSpace',
     category: 'office',
     badgeClass: 'office',
@@ -277,7 +259,7 @@ const softwareData = [
   },
   {
     id: '1c-docs',
-    sortIndex: 104,
+    sortIndex: 16,
     name: '1С:Документооборот 8',
     category: 'office',
     badgeClass: 'office',
@@ -293,7 +275,7 @@ const softwareData = [
   },
   {
     id: 'saby-docs',
-    sortIndex: 105,
+    sortIndex: 17,
     name: 'СБИС Документооборот',
     category: 'office',
     badgeClass: 'office',
@@ -309,7 +291,7 @@ const softwareData = [
   },
   {
     id: 'promt',
-    sortIndex: 106,
+    sortIndex: 18,
     name: 'PROMT Neural Translation',
     category: 'office',
     badgeClass: 'office',
@@ -325,7 +307,7 @@ const softwareData = [
   },
   {
     id: 'alteroffice',
-    sortIndex: 107,
+    sortIndex: 19,
     name: 'AlterOffice',
     category: 'office',
     badgeClass: 'office',
@@ -341,7 +323,7 @@ const softwareData = [
   },
   {
     id: 'communigate',
-    sortIndex: 108,
+    sortIndex: 20,
     name: 'CommuniGate Pro',
     category: 'office',
     badgeClass: 'office',
@@ -357,7 +339,7 @@ const softwareData = [
   },
   {
     id: 'r7-disk',
-    sortIndex: 109,
+    sortIndex: 21,
     logoDomain: 'r7-office.ru',
     name: 'Р7-Диск',
     category: 'office',
@@ -374,7 +356,7 @@ const softwareData = [
   },
   {
     id: 'p7-browser',
-    sortIndex: 110,
+    sortIndex: 22,
     logoDomain: 'r7-office.ru',
     name: 'Р7-Браузер / Chromium-Gost',
     category: 'office',
@@ -391,7 +373,7 @@ const softwareData = [
   },
   {
     id: 'myoffice-text',
-    sortIndex: 111,
+    sortIndex: 23,
     logoDomain: 'myoffice.ru',
     name: 'МойОфис Текст',
     category: 'office',
@@ -408,7 +390,7 @@ const softwareData = [
   },
   {
     id: 'myoffice-table',
-    sortIndex: 112,
+    sortIndex: 24,
     logoDomain: 'myoffice.ru',
     name: 'МойОфис Таблица',
     category: 'office',
@@ -425,7 +407,7 @@ const softwareData = [
   },
   {
     id: 'libreoffice-ru',
-    sortIndex: 113,
+    sortIndex: 25,
     name: 'LibreOffice (свободный)',
     category: 'office',
     badgeClass: 'office',
@@ -441,7 +423,7 @@ const softwareData = [
   },
   {
     id: 'vk-teams',
-    sortIndex: 114,
+    sortIndex: 26,
     name: 'VK Teams',
     category: 'office',
     badgeClass: 'office',
@@ -457,7 +439,7 @@ const softwareData = [
   },
   {
     id: 'astra-linux',
-    sortIndex: 115,
+    sortIndex: 27,
     name: 'Astra Linux Special Edition',
     category: 'system',
     badgeClass: 'system',
@@ -473,7 +455,7 @@ const softwareData = [
   },
   {
     id: 'alt-linux',
-    sortIndex: 116,
+    sortIndex: 28,
     name: 'ОС Альт Рабочая станция',
     category: 'system',
     badgeClass: 'system',
@@ -489,7 +471,7 @@ const softwareData = [
   },
   {
     id: 'red-os',
-    sortIndex: 117,
+    sortIndex: 29,
     name: 'РЕД ОС',
     category: 'system',
     badgeClass: 'system',
@@ -505,7 +487,7 @@ const softwareData = [
   },
   {
     id: 'rosa-fresh',
-    sortIndex: 118,
+    sortIndex: 30,
     name: 'РОСА Фреш',
     category: 'system',
     badgeClass: 'system',
@@ -521,7 +503,7 @@ const softwareData = [
   },
   {
     id: 'basis-virt',
-    sortIndex: 119,
+    sortIndex: 31,
     name: 'Базис.Виртуализация',
     category: 'system',
     badgeClass: 'system',
@@ -537,7 +519,7 @@ const softwareData = [
   },
   {
     id: 'termidesk',
-    sortIndex: 120,
+    sortIndex: 32,
     name: 'Термидеск',
     category: 'system',
     badgeClass: 'system',
@@ -553,7 +535,7 @@ const softwareData = [
   },
   {
     id: 'rubackup',
-    sortIndex: 121,
+    sortIndex: 33,
     name: 'RuBackup',
     category: 'system',
     badgeClass: 'system',
@@ -569,7 +551,7 @@ const softwareData = [
   },
   {
     id: 'kaspersky-os',
-    sortIndex: 122,
+    sortIndex: 34,
     name: 'KasperskyOS Thin Client',
     category: 'system',
     badgeClass: 'system',
@@ -585,7 +567,7 @@ const softwareData = [
   },
   {
     id: 'zvirt',
-    sortIndex: 123,
+    sortIndex: 35,
     name: 'zVirt / РОСА Виртуализация',
     category: 'system',
     badgeClass: 'system',
@@ -601,7 +583,7 @@ const softwareData = [
   },
   {
     id: 'kompas-3d',
-    sortIndex: 124,
+    sortIndex: 36,
     name: 'КОМПАС-3Д',
     category: 'design',
     badgeClass: 'design',
@@ -617,7 +599,7 @@ const softwareData = [
   },
   {
     id: 'nanocad',
-    sortIndex: 125,
+    sortIndex: 37,
     name: 'nanoCAD',
     category: 'design',
     badgeClass: 'design',
@@ -633,7 +615,7 @@ const softwareData = [
   },
   {
     id: 'tflex',
-    sortIndex: 126,
+    sortIndex: 38,
     name: 'T-FLEX CAD',
     category: 'design',
     badgeClass: 'design',
@@ -649,7 +631,7 @@ const softwareData = [
   },
   {
     id: 'renga',
-    sortIndex: 127,
+    sortIndex: 39,
     name: 'Renga',
     category: 'design',
     badgeClass: 'design',
@@ -665,7 +647,7 @@ const softwareData = [
   },
   {
     id: 'model-studio',
-    sortIndex: 128,
+    sortIndex: 40,
     name: 'Model Studio CS',
     category: 'design',
     badgeClass: 'design',
@@ -681,7 +663,7 @@ const softwareData = [
   },
   {
     id: 'pilot-bim',
-    sortIndex: 129,
+    sortIndex: 41,
     name: 'Pilot-BIM / Pilot-ICE',
     category: 'design',
     badgeClass: 'design',
@@ -697,7 +679,7 @@ const softwareData = [
   },
   {
     id: 'photomaster',
-    sortIndex: 130,
+    sortIndex: 42,
     name: 'ФотоМАСТЕР',
     category: 'design',
     badgeClass: 'design',
@@ -713,7 +695,7 @@ const softwareData = [
   },
   {
     id: 'movavi-photo',
-    sortIndex: 131,
+    sortIndex: 43,
     name: 'Movavi Photo Editor',
     category: 'design',
     badgeClass: 'design',
@@ -729,7 +711,7 @@ const softwareData = [
   },
   {
     id: 'movavi',
-    sortIndex: 132,
+    sortIndex: 44,
     name: 'Movavi Video Editor',
     category: 'design',
     badgeClass: 'design',
@@ -745,7 +727,7 @@ const softwareData = [
   },
   {
     id: 'nanocad-bim',
-    sortIndex: 133,
+    sortIndex: 45,
     logoDomain: 'nanocad.ru',
     name: 'nanoCAD BIM / СПДС',
     category: 'design',
@@ -762,7 +744,7 @@ const softwareData = [
   },
   {
     id: 'cadesigner-logos',
-    sortIndex: 134,
+    sortIndex: 46,
     name: 'ЛОГОС (Росатом)',
     category: 'design',
     badgeClass: 'design',
@@ -778,7 +760,7 @@ const softwareData = [
   },
   {
     id: 'polyspace-alt',
-    sortIndex: 135,
+    sortIndex: 47,
     name: 'Аскон: инженерные расчёты',
     category: 'design',
     badgeClass: 'design',
@@ -794,7 +776,7 @@ const softwareData = [
   },
   {
     id: 'kaspersky',
-    sortIndex: 136,
+    sortIndex: 48,
     name: 'Kaspersky Premium',
     category: 'security',
     badgeClass: 'security',
@@ -810,7 +792,7 @@ const softwareData = [
   },
   {
     id: 'drweb',
-    sortIndex: 137,
+    sortIndex: 49,
     name: 'Dr.Web Security Space',
     category: 'security',
     badgeClass: 'security',
@@ -826,7 +808,7 @@ const softwareData = [
   },
   {
     id: 'cryptopro',
-    sortIndex: 138,
+    sortIndex: 50,
     name: 'КриптоПро CSP',
     category: 'security',
     badgeClass: 'security',
@@ -842,7 +824,7 @@ const softwareData = [
   },
   {
     id: 'ptsecurity',
-    sortIndex: 139,
+    sortIndex: 51,
     name: 'Positive Technologies',
     category: 'security',
     badgeClass: 'security',
@@ -858,7 +840,7 @@ const softwareData = [
   },
   {
     id: 'secret-net',
-    sortIndex: 140,
+    sortIndex: 52,
     name: 'Secret Net Studio',
     category: 'security',
     badgeClass: 'security',
@@ -874,7 +856,7 @@ const softwareData = [
   },
   {
     id: 'vipnet',
-    sortIndex: 141,
+    sortIndex: 53,
     name: 'ViPNet Client',
     category: 'security',
     badgeClass: 'security',
@@ -890,7 +872,7 @@ const softwareData = [
   },
   {
     id: 'searchinform',
-    sortIndex: 142,
+    sortIndex: 54,
     name: 'SearchInform КИБ',
     category: 'security',
     badgeClass: 'security',
@@ -906,7 +888,7 @@ const softwareData = [
   },
   {
     id: 'ideco',
-    sortIndex: 143,
+    sortIndex: 55,
     name: 'Ideco NGFW',
     category: 'security',
     badgeClass: 'security',
@@ -922,7 +904,7 @@ const softwareData = [
   },
   {
     id: 'usergate',
-    sortIndex: 144,
+    sortIndex: 56,
     name: 'UserGate NGFW',
     category: 'security',
     badgeClass: 'security',
@@ -938,7 +920,7 @@ const softwareData = [
   },
   {
     id: 'passwork',
-    sortIndex: 145,
+    sortIndex: 57,
     name: 'Passwork',
     category: 'security',
     badgeClass: 'security',
@@ -954,7 +936,7 @@ const softwareData = [
   },
   {
     id: 'staffcop',
-    sortIndex: 146,
+    sortIndex: 58,
     name: 'Staffcop Enterprise',
     category: 'security',
     badgeClass: 'security',
@@ -970,7 +952,7 @@ const softwareData = [
   },
   {
     id: 'drweb-cureit',
-    sortIndex: 147,
+    sortIndex: 59,
     name: 'Dr.Web CureIt!',
     category: 'security',
     badgeClass: 'security',
@@ -986,7 +968,7 @@ const softwareData = [
   },
   {
     id: 'kaspersky-endpoint',
-    sortIndex: 148,
+    sortIndex: 60,
     name: 'Kaspersky Endpoint Security',
     category: 'security',
     badgeClass: 'security',
@@ -1002,7 +984,7 @@ const softwareData = [
   },
   {
     id: 'avanpost',
-    sortIndex: 149,
+    sortIndex: 61,
     name: 'Avanpost IDM / SSO',
     category: 'security',
     badgeClass: 'security',
@@ -1018,7 +1000,7 @@ const softwareData = [
   },
   {
     id: 'rudesktop',
-    sortIndex: 150,
+    sortIndex: 62,
     name: 'RuDesktop',
     category: 'remote',
     badgeClass: 'remote',
@@ -1034,7 +1016,7 @@ const softwareData = [
   },
   {
     id: 'litemanager',
-    sortIndex: 151,
+    sortIndex: 63,
     name: 'LiteManager',
     category: 'remote',
     badgeClass: 'remote',
@@ -1050,7 +1032,7 @@ const softwareData = [
   },
   {
     id: 'rms-assistant',
-    sortIndex: 152,
+    sortIndex: 64,
     name: 'RMS / Ассистент',
     category: 'remote',
     badgeClass: 'remote',
@@ -1066,7 +1048,7 @@ const softwareData = [
   },
   {
     id: 'getscreen',
-    sortIndex: 153,
+    sortIndex: 65,
     name: 'Getscreen.me',
     category: 'remote',
     badgeClass: 'remote',
@@ -1082,7 +1064,7 @@ const softwareData = [
   },
   {
     id: 'rustdesk-ru',
-    sortIndex: 154,
+    sortIndex: 66,
     name: 'Everty Desk',
     category: 'remote',
     badgeClass: 'remote',
@@ -1098,7 +1080,7 @@ const softwareData = [
   },
   {
     id: 'postgres-pro',
-    sortIndex: 155,
+    sortIndex: 67,
     name: 'Postgres Pro',
     category: 'dev',
     badgeClass: 'dev',
@@ -1114,7 +1096,7 @@ const softwareData = [
   },
   {
     id: 'gitverse',
-    sortIndex: 156,
+    sortIndex: 68,
     name: 'GitVerse',
     category: 'dev',
     badgeClass: 'dev',
@@ -1130,7 +1112,7 @@ const softwareData = [
   },
   {
     id: 'ydb',
-    sortIndex: 157,
+    sortIndex: 69,
     name: 'YDB',
     category: 'dev',
     badgeClass: 'dev',
@@ -1146,7 +1128,7 @@ const softwareData = [
   },
   {
     id: 'clickhouse',
-    sortIndex: 158,
+    sortIndex: 70,
     name: 'ClickHouse',
     category: 'dev',
     badgeClass: 'dev',
@@ -1162,7 +1144,7 @@ const softwareData = [
   },
   {
     id: 'tarantool',
-    sortIndex: 159,
+    sortIndex: 71,
     name: 'Tarantool',
     category: 'dev',
     badgeClass: 'dev',
@@ -1178,7 +1160,7 @@ const softwareData = [
   },
   {
     id: '1c-platform',
-    sortIndex: 160,
+    sortIndex: 72,
     name: '1С:Предприятие (разработка)',
     category: 'dev',
     badgeClass: 'dev',
@@ -1194,7 +1176,7 @@ const softwareData = [
   },
   {
     id: 'arenadata',
-    sortIndex: 161,
+    sortIndex: 73,
     name: 'Arenadata DB',
     category: 'dev',
     badgeClass: 'dev',
@@ -1210,7 +1192,7 @@ const softwareData = [
   },
   {
     id: 'jmix',
-    sortIndex: 162,
+    sortIndex: 74,
     name: 'Jmix',
     category: 'dev',
     badgeClass: 'dev',
@@ -1226,7 +1208,7 @@ const softwareData = [
   },
   {
     id: 'flussonic',
-    sortIndex: 163,
+    sortIndex: 75,
     name: 'Flussonic Media Server',
     category: 'dev',
     badgeClass: 'dev',
@@ -1242,7 +1224,7 @@ const softwareData = [
   },
   {
     id: 'simintech',
-    sortIndex: 164,
+    sortIndex: 76,
     name: 'SimInTech',
     category: 'dev',
     badgeClass: 'dev',
@@ -1258,7 +1240,7 @@ const softwareData = [
   },
   {
     id: '1c-erp',
-    sortIndex: 165,
+    sortIndex: 77,
     name: '1С:ERP',
     category: 'business',
     badgeClass: 'business',
@@ -1274,7 +1256,7 @@ const softwareData = [
   },
   {
     id: '1c-buh',
-    sortIndex: 166,
+    sortIndex: 78,
     name: '1С:Бухгалтерия 8',
     category: 'business',
     badgeClass: 'business',
@@ -1290,7 +1272,7 @@ const softwareData = [
   },
   {
     id: 'bitrix24',
-    sortIndex: 167,
+    sortIndex: 79,
     name: 'Битрикс24',
     category: 'business',
     badgeClass: 'business',
@@ -1306,7 +1288,7 @@ const softwareData = [
   },
   {
     id: 'amocrm',
-    sortIndex: 168,
+    sortIndex: 80,
     name: 'amoCRM',
     category: 'business',
     badgeClass: 'business',
@@ -1322,7 +1304,7 @@ const softwareData = [
   },
   {
     id: 'moy-sklad',
-    sortIndex: 169,
+    sortIndex: 81,
     name: 'МойСклад',
     category: 'business',
     badgeClass: 'business',
@@ -1338,7 +1320,7 @@ const softwareData = [
   },
   {
     id: 'megaplan',
-    sortIndex: 170,
+    sortIndex: 82,
     name: 'Мегаплан',
     category: 'business',
     badgeClass: 'business',
@@ -1354,7 +1336,7 @@ const softwareData = [
   },
   {
     id: 'directum',
-    sortIndex: 171,
+    sortIndex: 83,
     name: 'Directum RX',
     category: 'business',
     badgeClass: 'business',
@@ -1370,7 +1352,7 @@ const softwareData = [
   },
   {
     id: 'docsvision',
-    sortIndex: 172,
+    sortIndex: 84,
     name: 'Docsvision',
     category: 'business',
     badgeClass: 'business',
@@ -1386,7 +1368,7 @@ const softwareData = [
   },
   {
     id: 'elma365',
-    sortIndex: 173,
+    sortIndex: 85,
     name: 'ELMA365',
     category: 'business',
     badgeClass: 'business',
@@ -1402,7 +1384,7 @@ const softwareData = [
   },
   {
     id: 'okdesk',
-    sortIndex: 174,
+    sortIndex: 86,
     name: 'Okdesk',
     category: 'business',
     badgeClass: 'business',
@@ -1418,7 +1400,7 @@ const softwareData = [
   },
   {
     id: 'mindbox',
-    sortIndex: 175,
+    sortIndex: 87,
     name: 'Mindbox',
     category: 'business',
     badgeClass: 'business',
@@ -1434,7 +1416,7 @@ const softwareData = [
   },
   {
     id: 'planado',
-    sortIndex: 176,
+    sortIndex: 88,
     name: 'Планадо',
     category: 'business',
     badgeClass: 'business',
@@ -1450,7 +1432,7 @@ const softwareData = [
   },
   {
     id: '1c-unf',
-    sortIndex: 177,
+    sortIndex: 89,
     name: '1С:Управление нашей фирмой',
     category: 'business',
     badgeClass: 'business',
@@ -1466,7 +1448,7 @@ const softwareData = [
   },
   {
     id: '1c-zup',
-    sortIndex: 178,
+    sortIndex: 90,
     name: '1С:Зарплата и управление персоналом',
     category: 'business',
     badgeClass: 'business',
@@ -1482,7 +1464,7 @@ const softwareData = [
   },
   {
     id: 'sbis-otchet',
-    sortIndex: 179,
+    sortIndex: 91,
     name: 'СБИС Отчётность',
     category: 'business',
     badgeClass: 'business',
@@ -1498,7 +1480,7 @@ const softwareData = [
   },
   {
     id: 'trueconf',
-    sortIndex: 180,
+    sortIndex: 92,
     name: 'TrueConf',
     category: 'media',
     badgeClass: 'media',
@@ -1514,7 +1496,7 @@ const softwareData = [
   },
   {
     id: 'jazz-sber',
-    sortIndex: 181,
+    sortIndex: 93,
     logoDomain: 'sber.ru',
     name: 'Jazz by Sber',
     category: 'media',
@@ -1531,7 +1513,7 @@ const softwareData = [
   },
   {
     id: 'iva-mcs',
-    sortIndex: 182,
+    sortIndex: 94,
     name: 'IVA MCS',
     category: 'media',
     badgeClass: 'media',
@@ -1547,7 +1529,7 @@ const softwareData = [
   },
   {
     id: 'videomontazh',
-    sortIndex: 183,
+    sortIndex: 95,
     name: 'ВидеоМОНТАЖ',
     category: 'media',
     badgeClass: 'media',
@@ -1563,7 +1545,7 @@ const softwareData = [
   },
   {
     id: 'vsdc',
-    sortIndex: 184,
+    sortIndex: 96,
     name: 'VSDC Video Editor',
     category: 'media',
     badgeClass: 'media',
@@ -1579,7 +1561,7 @@ const softwareData = [
   },
   {
     id: 'audiomaster',
-    sortIndex: 185,
+    sortIndex: 97,
     name: 'АудиоМАСТЕР',
     category: 'media',
     badgeClass: 'media',
@@ -1595,7 +1577,7 @@ const softwareData = [
   },
   {
     id: 'openshot',
-    sortIndex: 186,
+    sortIndex: 98,
     name: 'OpenShot (свободный)',
     category: 'media',
     badgeClass: 'media',
